@@ -15,19 +15,15 @@ sudo apt update
 sudo apt install -y curl git jq lz4 build-essential
 ```
 
-# Install Go
+**Install Go**
+```
 sudo rm -rf /usr/local/go
 curl -L https://go.dev/dl/go1.21.6.linux-amd64.tar.gz | sudo tar -xzf - -C /usr/local
 echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.bash_profile
 source .bash_profile
 Node Installation
+```
 
-Node Name
-
-Your Node Name
-Port prefix
-
-266
 # Clone project repository
 cd && rm -rf Cardchain
 git clone https://github.com/DecentralCardGame/Cardchain
