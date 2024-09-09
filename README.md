@@ -24,11 +24,13 @@ source .bash_profile
 Node Installation
 ```
 
-# Clone project repository
+**Clone project repository**
+```
 cd && rm -rf Cardchain
 git clone https://github.com/DecentralCardGame/Cardchain
 cd Cardchain
 git checkout v0.16.0
+```
 
 # Build binary
 make install
