@@ -32,8 +32,10 @@ cd Cardchain
 git checkout v0.16.0
 ```
 
-# Build binary
+**Build binary**
+```
 make install
+```
 
 # Set node CLI configuration
 сardchaind config chain-id cardtestnet-12
