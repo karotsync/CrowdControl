@@ -1,13 +1,5 @@
-Hardware Requirements
-
-Minimum
-
-3CPU 4RAM 80GB
-Recommended
-
+**Hardware Requirements**
 4CPU 8RAM 160GB
-Rent On Hetzner | Rent On OVH
-Dependencies Installation
 
 **Install dependencies for building from source**
 ```
@@ -37,10 +29,12 @@ git checkout v0.16.0
 make install
 ```
 
-# Set node CLI configuration
+**Set node CLI configuration**
+```
 сardchaind config chain-id cardtestnet-12
 сardchaind config keyring-backend test
 сardchaind config node tcp://localhost:26657
+```
 
 # Initialize the node
 сardchaind init "Your Node Name" --chain-id cardtestnet-12
