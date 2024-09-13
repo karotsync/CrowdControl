@@ -36,8 +36,10 @@ make install
 сardchaind config node tcp://localhost:26657
 ```
 
-# Initialize the node
+**Initialize the node**
+```
 сardchaind init "Your Node Name" --chain-id cardtestnet-12
+```
 
 # Download genesis and addrbook files
 curl -L https://snapshots-testnet.nodejumper.io/cardchain-testnet/genesis.json > $HOME/.cardchaind/config/genesis.json
