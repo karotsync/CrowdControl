@@ -41,9 +41,11 @@ make install
 сardchaind init "Your Node Name" --chain-id cardtestnet-12
 ```
 
-# Download genesis and addrbook files
+**Download genesis and addrbook files**
+```
 curl -L https://snapshots-testnet.nodejumper.io/cardchain-testnet/genesis.json > $HOME/.cardchaind/config/genesis.json
 curl -L https://snapshots-testnet.nodejumper.io/cardchain-testnet/addrbook.json > $HOME/.cardchaind/config/addrbook.json
+```
 
 # Set seeds
 sed -i -e 's|^seeds *=.*|seeds = "86fe149f801ac75213179be5b56fbd1a1e545c43@202.61.225.157:20656"|' $HOME/.cardchaind/config/config.toml
