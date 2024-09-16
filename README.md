@@ -52,8 +52,10 @@ curl -L https://snapshots-testnet.nodejumper.io/cardchain-testnet/addrbook.json 
 sed -i -e 's|^seeds *=.*|seeds = "86fe149f801ac75213179be5b56fbd1a1e545c43@202.61.225.157:20656"|' $HOME/.cardchaind/config/config.toml
 ```
 
-# Set minimum gas price
+**Set minimum gas price**
+```
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.01ubpf"|' $HOME/.cardchaind/config/app.toml
+```
 
 # Set pruning
 sed -i \
