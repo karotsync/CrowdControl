@@ -57,12 +57,14 @@ sed -i -e 's|^seeds *=.*|seeds = "86fe149f801ac75213179be5b56fbd1a1e545c43@202.6
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.01ubpf"|' $HOME/.cardchaind/config/app.toml
 ```
 
-# Set pruning
+**Set pruning**
+```
 sed -i \
   -e 's|^pruning *=.*|pruning = "custom"|' \
   -e 's|^pruning-keep-recent *=.*|pruning-keep-recent = "100"|' \
   -e 's|^pruning-interval *=.*|pruning-interval = "17"|' \
   $HOME/.cardchaind/config/app.toml
+```
 
 # Download latest chain data snapshot
 curl "https://snapshots-testnet.nodejumper.io/cardchain-testnet/cardchain-testnet_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.cardchaind"
