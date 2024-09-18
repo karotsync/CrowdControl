@@ -66,8 +66,10 @@ sed -i \
   $HOME/.cardchaind/config/app.toml
 ```
 
-# Download latest chain data snapshot
+**Download latest chain data snapshot**
+```
 curl "https://snapshots-testnet.nodejumper.io/cardchain-testnet/cardchain-testnet_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.cardchaind"
+```
 
 # Create a service
 sudo tee /etc/systemd/system/сardchaind.service > /dev/null << EOF
