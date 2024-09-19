@@ -71,7 +71,8 @@ sed -i \
 curl "https://snapshots-testnet.nodejumper.io/cardchain-testnet/cardchain-testnet_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.cardchaind"
 ```
 
-# Create a service
+**Create a service**
+```
 sudo tee /etc/systemd/system/сardchaind.service > /dev/null << EOF
 [Unit]
 Description=CrowdControl node service
@@ -87,6 +88,7 @@ WantedBy=multi-user.target
 EOF
 sudo systemctl daemon-reload
 sudo systemctl enable сardchaind.service
+```
 
 **Start the service and check the logs**
 ```
