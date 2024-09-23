@@ -112,8 +112,10 @@ cat ~/.ssh/id_rsa.pub
 sudo apt update
 sudo apt upgrade -y
 ```
-# add new admin user
+**add new admin user**
+```
 sudo adduser admin --disabled-password -q
+```
 
 # upload public ssh key, replace YOUR_PUBLIC_SSH_KEY with the key above
 mkdir /home/admin/.ssh
